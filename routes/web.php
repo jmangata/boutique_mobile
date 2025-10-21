@@ -1,7 +1,9 @@
 <?php
 
+use Illuminate\Routing\RouteUrlGenerator;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+Route::get('/', [BoutiqueController::class,'index'])->name('boutique.index');
