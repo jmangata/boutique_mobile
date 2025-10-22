@@ -1,4 +1,5 @@
-@extends('app.blade.php')
-@section('content')
+@extends('layouts.app')
 
+@section('content')
+page d'accueil
 @endsection
