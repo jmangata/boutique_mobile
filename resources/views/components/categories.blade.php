@@ -1,5 +1,5 @@
 <!-- section des categories des produits-->
-<section class="container mx auto px-4 py-16">
+<section class="container mx-auto px-4 py-16">
 <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Nos Produits</h2>
 <!-- categories -->
 <div class="flex flex-wrap justify-center gap-4 mb-12">

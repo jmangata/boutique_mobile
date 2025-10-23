@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class BoutiqueController extends Controller
@@ -11,7 +12,10 @@ class BoutiqueController extends Controller
      */
     public function index()
     {
-        return view('index');
+        //récuperer six produits à l'aide de la base 
+        
+        $products= Product::limit(6)->get();
+        return view('index', compact('products'));
         //
     }
 
@@ -36,7 +40,9 @@ class BoutiqueController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $product= Product::find($id);
+        return view ('detail', compact('product'));
+        //selectionner un produit à partir de son identifiant 
     }
 
     /**
