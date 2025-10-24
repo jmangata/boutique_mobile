@@ -12,6 +12,9 @@ class Product extends Model
     protected $table= 'products';
     protected $fillable = ['name','categories_id','image','description','news','price'];
 
+    	protected	$casts=[
+		'news'	=>	'boolean',			
+		'price'	=>	'decimal:2',];
     //liaison eloquent belong to pour lire le contenue de la category du produit
     /**
      * Get all of the product for the Category
