@@ -18,9 +18,10 @@ class Product extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function product()
+    public function category():BelongsTo
     {
         return $this->belongsTo(Category::class);
     }
+    
     
 }

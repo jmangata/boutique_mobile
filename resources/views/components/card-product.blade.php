@@ -1,4 +1,5 @@
 <!-- -->
+
 <div class=" bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
     ma carte
     <div class="bg-gray-300 h-64 flex items-center justify-center">
@@ -7,7 +8,8 @@
     </div>
     <div class="p-4">
        <span class="text-xs text-orange-600 font-semibold">
-      {{ $product->Category->name}} 
+        
+      {{-- {{ $product->category->name}}  --}}
        </span>
        <h3 class="text-lg font-bold mt-2 mb-2 ">
         {{ $product->name }}
